@@ -68,6 +68,7 @@ Configure IKEv2/IPsec on MikroTik(Site-to-client)
   Right click on VPN_IKE2_CLIENT certificate and click export, enter a passphrase and than export as PKCS12.
   
   After export you can find the certificates on `Files` where you can download them because will need them on the client part when you will connect to the VPN.
+  ![ex](https://user-images.githubusercontent.com/44748406/193257541-b06fc928-af1c-4af9-8d03-8107037356bd.png)
 
 5- Fifth, we will create Policie, Proposal, Group, Peer, Identities, Profile, Mode Configs 
      
