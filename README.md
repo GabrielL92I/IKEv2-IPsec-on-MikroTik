@@ -70,6 +70,63 @@ Configure IKEv2/IPsec on MikroTik(Site-to-client)
   After export you can find the certificates on `Files` where you can download them because will need them on the client part when you will connect to the VPN.
   ![ex](https://user-images.githubusercontent.com/44748406/193257541-b06fc928-af1c-4af9-8d03-8107037356bd.png)
 
-5- Fifth, we will create Policie, Proposal, Group, Peer, Identities, Profile, Mode Configs 
+5- Fifth, we will create Policie, Proposal, Group, Peer, Identities, Profile, Mode Config. `IP->>IPsec`
+     
+ - Mode Config 
+ ![modeconfigs](https://user-images.githubusercontent.com/44748406/193271245-e901a172-ebd4-4710-b7f6-0feb4056ddbd.png)
+ 
+ - Profile
+ ![profile](https://user-images.githubusercontent.com/44748406/193271557-408810fa-e298-4486-b6f5-db14cfd4fd33.png)
+ 
+ - Group
+ ![group](https://user-images.githubusercontent.com/44748406/193272029-019cbee3-2f78-4b98-a1e9-ccf3e61c92c0.png)
+ 
+ - Proposal
+ ![proposal](https://user-images.githubusercontent.com/44748406/193272276-70d6e0db-dbb0-47d5-8477-b242e827e99e.png)
+ 
+ - Policie
+ ![policies](https://user-images.githubusercontent.com/44748406/193272641-327cebcb-d98e-43bd-91b2-2e18533019df.png)
+ 
+ - Peer
+ ![peer](https://user-images.githubusercontent.com/44748406/193272865-b69101e6-927c-467f-bed9-f0bf5251dad1.png)
+ 
+ - Indentity
+ ![Identity](https://user-images.githubusercontent.com/44748406/193273092-93b4a7da-e2d7-4c5e-ac2a-4f643f1097e2.png)
+ 
+ 6- Sixth, we will install certificates and configure VPN connection on client computer.
+ 
+  - Certificates installation
+  
+    Right click and install VPN_IKE2_CA.crt certificate on "Local Machine" and "Trusted Root Certification"
+   ![certcaaaa](https://user-images.githubusercontent.com/44748406/193274779-fbddeb9a-4c3e-4762-8f57-df744d2b7a39.png)
+    
+    Right click and install VPN_IKE2_CLIENT.p12 certificate on "Local Machine" and "Personal"
+    ![certclient](https://user-images.githubusercontent.com/44748406/193274723-887e644c-8412-414c-ba2d-c12d3eda30e9.png)
+    
+   - Client VPN Connection
+   
+     Go to `Settings->Network & internet->VPN->Add VPN` and fill in the needed information
+     
+     Connection name: Whatever name you want
+     Server name or address: your public IP address or DNS
+     VPN Type: IKEv2
+     Type of sing-in info: Certificate
+     
+     ![vpnconn](https://user-images.githubusercontent.com/44748406/193276226-f0b7e726-c024-492a-9172-ee924e352e3a.png)
+     
+   - Change some adapter information
+   
+     Go to `Control Panel->Network and Internet->Network Connections` and right click on your  `WAN Miniport(IKEv2)`, than go to `Security` tab and change:
+     
+     Data encryption: Maximum strength encryption(disconnect if server declines)
+     Authentication: Use machine certificates
+     
+    ![adapter](https://user-images.githubusercontent.com/44748406/193277220-06488326-35f9-41f7-8efb-48187f949caf.png)
+    
+     After this you will have a successfully VPN connection over IKEv2/IPsec using certificates.
+     ![connected](https://user-images.githubusercontent.com/44748406/193277636-71f6c456-9956-44f7-8168-2d682fb70121.png)
+     
+     Peer connected proof
+     ![conrouter](https://user-images.githubusercontent.com/44748406/193278006-0e9fc93a-1226-4d81-98cb-6b180288cca8.png)
      
      Thank you.
