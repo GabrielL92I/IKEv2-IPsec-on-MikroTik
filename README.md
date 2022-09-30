@@ -124,9 +124,9 @@ Configure IKEv2/IPsec on MikroTik(Site-to-client)
    [ ![adapter](https://user-images.githubusercontent.com/44748406/193277220-06488326-35f9-41f7-8efb-48187f949caf.png)](https://github.com/GabrielL92I/IKEv2-IPsec-on-MikroTik/issues/1#issuecomment-1263558262)
     
      After this you will have a successfully VPN connection over IKEv2/IPsec using certificates.
-    ![connected](https://user-images.githubusercontent.com/44748406/193277636-71f6c456-9956-44f7-8168-2d682fb70121.png)
+   [ ![connected](https://user-images.githubusercontent.com/44748406/193277636-71f6c456-9956-44f7-8168-2d682fb70121.png)](https://github.com/GabrielL92I/IKEv2-IPsec-on-MikroTik/issues/1#issuecomment-1263560632)
      
      Peer connected proof
-    ![conrouter](https://user-images.githubusercontent.com/44748406/193278006-0e9fc93a-1226-4d81-98cb-6b180288cca8.png)
+   [ ![conrouter](https://user-images.githubusercontent.com/44748406/193278006-0e9fc93a-1226-4d81-98cb-6b180288cca8.png)](https://github.com/GabrielL92I/IKEv2-IPsec-on-MikroTik/issues/1#issuecomment-1263563414)
      
      Thank you.
