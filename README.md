@@ -121,7 +121,7 @@ Configure IKEv2/IPsec on MikroTik(Site-to-client)
      Data encryption: Maximum strength encryption(disconnect if server declines)
      Authentication: Use machine certificates
      
-    ![adapter](https://user-images.githubusercontent.com/44748406/193277220-06488326-35f9-41f7-8efb-48187f949caf.png)
+   [ ![adapter](https://user-images.githubusercontent.com/44748406/193277220-06488326-35f9-41f7-8efb-48187f949caf.png)](https://github.com/GabrielL92I/IKEv2-IPsec-on-MikroTik/issues/1#issuecomment-1263558262)
     
      After this you will have a successfully VPN connection over IKEv2/IPsec using certificates.
     ![connected](https://user-images.githubusercontent.com/44748406/193277636-71f6c456-9956-44f7-8168-2d682fb70121.png)
