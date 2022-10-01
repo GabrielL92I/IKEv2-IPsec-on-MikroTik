@@ -16,7 +16,7 @@ Configure IKEv2/IPsec on MikroTik(Site-to-client)
 - Creation of the NAT rule(only if you don't have this rule already). `IP->Firewall->NAT`
 ![masqeurade](https://user-images.githubusercontent.com/44748406/193255383-4fbf71a8-15c1-46d7-b58b-007e75ef67b9.png)
   
- 4- Forth, we will create and export certificates(VPN_IKE2_CA,VPN_IKE2_SERVER and VPN_IKE2_CLIENT) needed for authentication between VPN server and client.
+3- Forth, we will create and export certificates(VPN_IKE2_CA,VPN_IKE2_SERVER and VPN_IKE2_CLIENT) needed for authentication between VPN server and client.
 
 - Creation of CA certificate. `System->Certificates`
 
@@ -70,7 +70,7 @@ Configure IKEv2/IPsec on MikroTik(Site-to-client)
   After export you can find the certificates on `Files` where you can download them because will need them on the client part when you will connect to the VPN.
   ![ex](https://user-images.githubusercontent.com/44748406/193257541-b06fc928-af1c-4af9-8d03-8107037356bd.png)
 
-5- Fifth, we will create Policy, Proposal, Group, Peer, Identities, Profile, Mode Config. `IP->>IPsec`
+4- Fifth, we will create Policy, Proposal, Group, Peer, Identities, Profile, Mode Config. `IP->>IPsec`
      
  - Mode Config 
  ![modeconfigs](https://user-images.githubusercontent.com/44748406/193271245-e901a172-ebd4-4710-b7f6-0feb4056ddbd.png)
@@ -93,7 +93,7 @@ Configure IKEv2/IPsec on MikroTik(Site-to-client)
  - Indentity
  ![Identity](https://user-images.githubusercontent.com/44748406/193273092-93b4a7da-e2d7-4c5e-ac2a-4f643f1097e2.png)
  
- 6- Sixth, we will install certificates and configure VPN connection on client computer.
+ 5- Sixth, we will install certificates and configure VPN connection on client computer.
  
   - Certificates installation
   
