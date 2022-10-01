@@ -70,7 +70,7 @@ Configure IKEv2/IPsec on MikroTik(Site-to-client)
   After export you can find the certificates on `Files` where you can download them because will need them on the client part when you will connect to the VPN.
   ![ex](https://user-images.githubusercontent.com/44748406/193257541-b06fc928-af1c-4af9-8d03-8107037356bd.png)
 
-5- Fifth, we will create Policie, Proposal, Group, Peer, Identities, Profile, Mode Config. `IP->>IPsec`
+5- Fifth, we will create Policy, Proposal, Group, Peer, Identities, Profile, Mode Config. `IP->>IPsec`
      
  - Mode Config 
  ![modeconfigs](https://user-images.githubusercontent.com/44748406/193271245-e901a172-ebd4-4710-b7f6-0feb4056ddbd.png)
@@ -84,7 +84,7 @@ Configure IKEv2/IPsec on MikroTik(Site-to-client)
  - Proposal
  ![proposal](https://user-images.githubusercontent.com/44748406/193272276-70d6e0db-dbb0-47d5-8477-b242e827e99e.png)
  
- - Policie
+ - Policy
  ![policies](https://user-images.githubusercontent.com/44748406/193272641-327cebcb-d98e-43bd-91b2-2e18533019df.png)
  
  - Peer
